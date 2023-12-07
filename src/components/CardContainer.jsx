@@ -10,7 +10,7 @@ const CardContainer = ({forecast}) => {
     let renderedCount = 0;
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 overflow-y-auto">
 
 <div className="card w-96 bg-base-100 bg-opacity-80 shadow-xl">
     <figure className="px-10 pt-10">

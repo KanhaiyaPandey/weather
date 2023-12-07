@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
 import Inputs from "./components/Inputs";
 import TimeAndLocation from "./components/TimeAndLocation";
-
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CardContainer from "./components/CardContainer";
 import EmptyPage from "./components/EmptyPage";
-import Error from "./components/Error";
 
 
 
@@ -17,8 +15,8 @@ const App = () => {
 
   return (
     <div className="mx-auto max-w-full py-5 px-6 lg:px-32
-     bg-gradient-to-br from-cyan-700 to-blue-400 shadow-xl
-     shadow-gray-700 min-h-screen flex flex-col">
+    bg-custom-purple shadow-xl
+     shadow-gray-700 min-h-screen flex flex-col overflow-hidden">
   {weather ? (
   <>
    <Inputs weather={weather} setWeather={setWeather} setForecast={setForecast} />

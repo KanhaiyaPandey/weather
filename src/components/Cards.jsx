@@ -29,7 +29,7 @@ const Cards = ({data}) => {
           <p className="text-lg font-semibold">{data?.main?.humidity}%</p>
         </div>
         <div className="mt-2">
-          <p className="text-lg font-semibold">{convertTemp(data?.main?.feels_like)}°C</p>
+          <p className="text-lg font-semibold">{convertTemp(data?.main?.feels_like)} °C</p>
         </div>
       </div>
     </div>
